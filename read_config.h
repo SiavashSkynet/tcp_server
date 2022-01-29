@@ -14,3 +14,4 @@ typedef struct
 
 //functio|n goes here
 static int handler(void* user, const char* section, const char* name,const char* value);
+int read_ini();
