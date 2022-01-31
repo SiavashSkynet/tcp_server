@@ -1,4 +1,7 @@
 #include <iostream>
 #include <sqlite3.h>
 
-int db_handler();
+namespace db
+{
+  int db_handler();
+}
