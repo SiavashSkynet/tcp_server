@@ -12,6 +12,9 @@ typedef struct
     const char* p2;
 } configuration;
 
-//functio|n goes here
-static int handler(void* user, const char* section, const char* name,const char* value);
-int read_ini();
+namespace read_config
+{
+    //functio|n goes here
+    static int handler(void* user, const char* section, const char* name,const char* value);
+    int read_ini();
+} // end of namespace
