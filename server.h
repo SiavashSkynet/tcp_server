@@ -10,7 +10,9 @@
 #include <sys/types.h>
 #include <sys/socket.h>
 #include <netinet/in.h>
-#include <sys/time.h> 
+#include <sys/time.h>
+#include <json/value.h>
+#include <fstream>
 #include "read_config"
 #include "db.h"
 
@@ -19,18 +21,11 @@
 
 namespace server
 {
-    int opt = TRUE;
-    int master_socket , addrlen , new_socket , client_socket[30] ,
-        max_clients = 30 , activity, i , valread , sd;
-    int max_sd;
-    struct sockaddr_in address;
-
-    char buffer[1025]; //data buffer of 1K
-
-    //set of socket descriptors
-    fd_set readfds;
-
-    //a message
-    char *message = "Hello Client \r\n";
+    int server_fd, new_socket, valread; 
+    struct sockaddr_in address; 
+    int opt = 1; 
+    int addrlen = sizeof(address); 
+    char buffer[1024] = {0}; 
+    char *msg = "Hey there!"; 
 
 }
