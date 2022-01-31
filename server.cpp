@@ -1,7 +1,5 @@
 
 #include "server.h"
-#include 
-int port = config.port;
 
 namespace server
 {
