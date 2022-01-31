@@ -12,6 +12,7 @@
 #include <netinet/in.h>
 #include <sys/time.h> 
 #include "read_config"
+#include "db.h"
 
 #define TRUE 1
 #define FALSE 0
