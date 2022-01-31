@@ -37,6 +37,6 @@ namespace Read_config
           }
 
           printf("Config loaded from 'fconfig.ini': port=%d, name=%d, email=%s\n", config.port, config.p1, config.p2);
-          return 0;
+          return pconfig->port;
      }   
 }
