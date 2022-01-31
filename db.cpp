@@ -19,7 +19,7 @@ namespace db
 			sqlite3_close(DB);
 			return (0);
 		
-	void insert_data_table_p1(int p1 , Strig p2, String current_time)
+	void insert_data_table_POS_MESSAGE (int p1 , Strig p2, String current_time)
 	{
 		sqlite3 *db;
 		sqlite3_stmt * st;
