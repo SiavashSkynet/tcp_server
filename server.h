@@ -11,12 +11,14 @@
 #include <sys/socket.h>
 #include <netinet/in.h>
 #include <sys/time.h> 
+#include "read_config"
 
 #define TRUE 1
 #define FALSE 0
-#define PORT 9000
+#define PORT 
 
-
+namespace server
+{
     int opt = TRUE;
     int master_socket , addrlen , new_socket , client_socket[30] ,
         max_clients = 30 , activity, i , valread , sd;
@@ -31,3 +33,4 @@
     //a message
     char *message = "ECHO Daemon v1.0 \r\n";
 
+}
