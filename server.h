@@ -31,6 +31,6 @@ namespace server
     fd_set readfds;
 
     //a message
-    char *message = "ECHO Daemon v1.0 \r\n";
+    char *message = "Hello Client \r\n";
 
 }
