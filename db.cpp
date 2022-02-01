@@ -11,13 +11,14 @@ namespace db
 		if (exit)
 		{
 			std::cerr << "Error open DB " << sqlite3_errmsg(DB) << std::endl;
+			*db_connected_ptr = false;
 			return (-1);
 		}
 
 		else
 			std::cout << "Opened Database Successfully!" << std::endl;
 			sqlite3_close(DB);
-			db_connected = true
+			*db_connected_ptr = true;
 			return (0);
 		
 	void insert_data_table_POS_MESSAGE (int p1 , Strig p2, String current_time)
