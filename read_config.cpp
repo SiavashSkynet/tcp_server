@@ -33,11 +33,13 @@ namespace Read_config
           if (ini_parse("fconfig.ini", handler, &config) < 0)
           {
               printf("Can't load 'fconfig.ini'\n");
+              *read_config_flag = false;
               return 1;
           }
 
           printf("Config loaded from 'fconfig.ini': port=%d, name=%d, email=%s\n", config.port, config.p1, config.p2);
           int ret = pconfig->port;
+          *read_config_flag = true;
           return ret ;
      }   
 }
