@@ -13,7 +13,10 @@ int port ;
 int main()
 {
    
-    port = read_config::read_ini();
+    if(!read_config_flag == 0)
+    {   
+      port = read_config::read_ini();
+    }
    
     if (!db::db_connected == 0)
     {
