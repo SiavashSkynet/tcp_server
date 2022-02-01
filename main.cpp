@@ -14,8 +14,14 @@ int main()
 {
    
     port = read_config::read_ini();
+   
+    if (!db::db_connected == 0)
+    {
+       db::db_handler();
+    }
+    
     server::handle_server(port);
-    db::db_handler();
+    
     
     /*
     after interval = 2mins sort db here
