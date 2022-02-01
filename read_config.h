@@ -12,6 +12,9 @@ typedef struct
     const char* p2;
 } configuration;
 
+bool read_config_flag = false;
+bool *read_config_ptr = &read_config_flag;
+
 namespace read_config
 {
     //functio|n goes here
