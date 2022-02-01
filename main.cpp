@@ -13,7 +13,7 @@ int port ;
 int main()
 {
    
-    if(!read_config_flag == 0)
+    if (!read_config_flag == 0)
     {   
       port = read_config::read_ini();
     }
