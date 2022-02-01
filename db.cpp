@@ -17,6 +17,7 @@ namespace db
 		else
 			std::cout << "Opened Database Successfully!" << std::endl;
 			sqlite3_close(DB);
+			db_connected = true
 			return (0);
 		
 	void insert_data_table_POS_MESSAGE (int p1 , Strig p2, String current_time)
