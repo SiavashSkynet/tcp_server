@@ -7,11 +7,9 @@
 
 using namespace std;
 
-int port ;
-
 int main()
 {
-   
+    int port ;
     if (!read_config_flag == 0)
     {   
       port = read_config::read_ini();
