@@ -10,7 +10,7 @@ using namespace std;
 int main()
 {
     int port ;
-    if (!read_config_flag == 0)
+    if (!read_config::read_config_flag == 0)
     {   
       port = read_config::read_ini();
     }
